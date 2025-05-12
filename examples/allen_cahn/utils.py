@@ -2,7 +2,7 @@ import scipy.io
 
 
 def get_dataset():
-    data = scipy.io.loadmat("data/allen_cahn.mat")
+    data = scipy.io.loadmat("/content/jaxpi_Research/examples/allen_cahn/data/allen_cahn.mat")
     u_ref = data["usol"]
     t_star = data["t"].flatten()
     x_star = data["x"].flatten()
